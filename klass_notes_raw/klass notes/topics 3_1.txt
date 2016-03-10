@@ -1,0 +1,28 @@
+topics for 3/1
+
+fractions
+indicies, powers, limits
+mathbb
+mathcal
+left/right
+
+
+
+common symbols
+sum
+product
+in
+notin
+subset
+exists
+for each
+arrow
+implies
+iff
+union
+intersection
+empty set
+infinity
+
+
+
