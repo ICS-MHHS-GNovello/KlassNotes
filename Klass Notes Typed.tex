@@ -5,6 +5,7 @@
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{enumerate}
+\usepackage{color}
 \begin{document}
 
 \section{Set Theory}
@@ -64,7 +65,111 @@ $\mathcal{U}$: Things on Earth
 
 
 %Ruth: Pages L4A-L4G
+\begin{Large}
+L4A Generate $\mathbb{N}$
+\end{Large}
 
+\textit{$\mathbb{N}$}= $\lbrace$ 1, 2, 3,.. $\rbrace$ as produced via Peono Axions. How do the set theorists generate $\mathbb{N}$ Hint: Use 
+$\phi$ Is there any inherent/essential/intrinsic difference between $\lbrace$cat, hat, dog, blue$\rbrace$ and $\lbrace$1, 2, 3, 4$\rbrace$?
+
+\includegraphics[scale=0.5]{Pages/generateN1.pdf}
+
+\newpage
+
+\begin{Large}
+L4B Generate $\mathbb{N}$
+\end{Large}
+
+Ans.One set has an implicit ordering induced by Peono Axions.
+Def: $<$is a (strict) ordering on $S$ (S $\neq$ $\emptyset$) if $\forall$ a, b, c in S 
+
+\begin{enumerate}[(i)]
+\item Exactly one of 
+
+a $<$ b
+
+b $<$ a
+
+a = b is true 
+\item If a $<$ b and b $<$ c 
+\end{enumerate}
+then a $<$ c
+This is an axiomatic presentation
+
+\includegraphics[scale=0.5]{Pages/generateN2.pdf}
+
+\newpage
+
+\begin{Large}
+L4C Generate $\mathbb{N}$
+\end{Large}
+
+How could this notion be achieved set theoretically? Note: It involves pairs of elements of S.
+
+1st step 
+Need $<$ to be a subset 6 of $SxS$ = (S{\begin{tiny}
+1 
+\end{tiny}
+S{\begin{tiny}
+2
+\end{tiny})
+For all a, b, c in S
+\begin{enumerate}
+\item[(i)] 
+(a, b) $\epsilon$ 6 
+if (b, a) 6 $\nexists$ 
+\item[(ii)] 
+if (a, b) and (b, c) $\epsilon$ C then (a, c) $\epsilon$ C
+\end{enumerate}
+
+\includegraphics[scale=0.5]{Pages/generateN3.pdf}
+
+\newpage
+
+\begin{Large}
+L4D Generate $\mathbb{N}$
+\end{Large}
+
+Step 2 Sets are Undefined Present $A \times B$ (and so $S \times S$) set theoretically: (a, B) can be re-exposed so that its order on this surface does not affect its meaning How? for example consider $\lbrace$ $\lbrace$ a, 1 $\rbrace$, $\lbrace$ b, 2 $\rbrace$
+$\rbrace$ instead of (a, b) or even $\lbrace$ a\begin{tiny}
+2
+\end{tiny}
+$\lbrace$a, b$\rbrace$
+$\rbrace$ to denote a typical element of AxB
+
+\includegraphics[scale=0.5]{Pages/generateN4.pdf}
+
+\newpage
+
+\begin{Large}
+L4E Generate $\mathbb{N}$
+\end{Large}
+Most importantly the set S can be reconstructed to exhibit its order For example give (S, $<$) and s $\in$ S let Ls
+= $\lbrace$ a $\in$ S; a $<$ s $\rbrace$ Then let $S$ = $\lbrace$ Ls
+: s $\in$ S $\rbrace$ (S, c) represents (S, $<$) Can you find another?
+\includegraphics[scale=0.5]{Pages/generateN5.pdf}
+
+\newpage
+
+\begin{Large}
+L4F Generate $\mathbb{N}$
+\end{Large}
+
+Given $\lbrace$ 1, 2, 3,... $\rbrace$ what do we do next? Ans: Fiddle with what we have. What is the 2nd successor of 1? 2? 3? etc. What is the 6th successor of n? These questions lead to the discovery of the operation of addition on $\mathbb{N}$. Since this operation is one-to-one it can (often) be inverted. Hence
+
+\includegraphics[scale=0.5]{Pages/generateN6.pdf}
+
+\newpage
+
+\begin{Large}
+L4G Generate $\mathbb{N}$
+\end{Large}
+
+What is the 6th predecessor of n? Currently, this question can be answered if k $<$ n. We want to be able to answer it for all n and How? Necessarily we need numbers
+
+\includegraphics[scale=0.5]{Pages/generateN7.pdf}
+
+\newpage
 
 
 
@@ -184,6 +289,153 @@ R will represent real numbers
 
 %Aaron: First 2 pages and 48-50
 
+Sequences
+
+Limits
+
+Constructing the limit via:
+
+\begin{enumerate} [(i)]
+
+\item Monotonic Sequences
+\item Monotonic Sub-sequences 
+
+\end{enumerate}
+
+Cauchy Sequences
+
+Subsequential Limits 
+
+\includegraphics[scale=.8]{Pages/S&L_page1}
+
+\newpage
+
+
+Besides $\vec{a}$ = $(a{_0}, a_{1}, a_{2}, ...)$, how else might we harness elements of $\mathbb {R}^{2}$?
+
+$$s_0 = a_{0}$$
+
+$$s_1 = a_{0} + \frac{a_{1}}{2}$$
+
+
+
+$$s_{n} = \sum_{j=0}^{n} a_{j} 2^{-j}$$
+
+
+
+
+The sequence $\{s_{n}\}$ represents \{ ${z \in \mathbb{Z}_{\infty} : z < s_{n}} $ for all in sufficient large \}
+
+It has a limit of $s_{\infty}$
+
+\includegraphics[scale=.8]{Pages/S&L_page2}
+
+\newpage
+{\bf Sequences}
+
+
+Def: a sequence \{ ${a_n}_{1}^\infty$ \} is a map from the integers. A real valued sequence is a map into the reale from the integers.
+
+Examples:
+
+\begin{enumerate} [{}]
+
+\item $a{_n}$ = $\frac{1}{n^{2}}$
+\item $a_{n} = (-c)^{n}$
+\item $a_{n} = \cos(nx)$
+\item $a_{n} = n^\frac{1}{n}$
+\item $a_{n} = (1 + \frac{1}{n})^{n}$
+
+\end{enumerate}
+
+\includegraphics[scale=.8]{Pages/S&L_page48}
+
+\newpage
+
+{\bf Convergence of Sequences} 
+
+Def: $a_{n} \rightarrow a$ if and only if $\forall \epsilon > 0\exists N$:
+
+for all n $\geq N$, $|a_{n} - a| < \epsilon$
+
+we write... $$a = \lim_{n \rightarrow \infty} a_{n}$$
+
+Def: $a_{n} \rightarrow + \infty$ if and only if $\forall b < \infty$ $\epsilon N_{b}$ such that for all $n \geq , N_{b} , a_{n} \geq b$ 
+
+Def: $a_{n} \rightarrow - \infty$ ?
+
+Then (limits are unique)
+
+if $a_{n} \rightarrow a$ and $a_{n} \rightarrow b$
+
+then $a=b$
+
+\includegraphics[scale=.8]{Pages/S&L_page49(1)}
+
+\newpage
+
+{\bf Convergence in $\mathbb {R}_{\infty}$ An Elegant Reformation}
+
+Def: Let $\{ a_{n} \}$ be a sequence of reals and $a_{\infty} \epsilon \mathbb {R} \bigcup$ $\{  \pm \infty \}$ .
+
+$\lim_{n \rightarrow \infty} a_{n} = a_{\infty}$ if and only if...
+
+\begin{enumerate} [(i)]
+
+\item $\forall$ real $b > a_{\infty}$
+
+$\exists N_{b} < \infty$ : for all
+
+$n \geq N_{b}$, $a_{n} < b$
+
+\end{enumerate}
+
+and
+
+\begin{enumerate} [(ii)]
+
+\item $\forall$ real $b < a_{\infty}$
+
+$\exists N_{b} < \infty$: for all
+
+$n \geq N_{b}$, $a_{n} > b$
+
+\end{enumerate}
+
+you prove
+
+\includegraphics[scale=.7]{Pages/S&L_page49(2)}
+
+\newpage
+
+
+{\bf Finding Limits and Proving Convergence}
+
+Example 1: $\lim_{n \rightarrow \infty} \frac{1}{n^{2}} = 0$
+
+Example 2: $\lim_{n \rightarrow \infty} \frac{3n+1}{7n-4} = \frac{3}{7}$
+
+Example 3: $\lim_{n \rightarrow \infty} (1 + \frac{1}{n})^{n} = e$
+
+Homework: Suppose $a_{n} \rightarrow a > 0$
+
+
+Prove $\sqrt{a_{n}} \rightarrow \sqrt{a}$
+
+\includegraphics[scale=.7]{Pages/S&L_page50}
+
+\newpage
+
+
+
+
+
+
+
+
+
+
+
 %Hamza: 51-52B
 
 \section{Limit and Convergence}
@@ -197,6 +449,36 @@ R will represent real numbers
 \section{Infinite Series}
 
 %Sukhreet: IS1 - IS 7
+A frog is 2 feet from a wall. He makes a succession of jumps toward it, always jumping half his remaining distance to the wall. Hence his finest jump is one foot. Now he is one foot from the wall. So
+
+\includegraphics[scale=.5]{Pages/IS_1}
+
+\newpage
+
+his second jump is ${\frac{1}{2}}$ feet. He is now ${\frac{1}{2}}$ feet from the wall so he jumps ${\frac{1}{4}}$ feet. He makes successive jumps of ${1, \frac{1}{2}, \frac{1}{4}, \frac{1}{8}, . . .}$ After n jumps he has moved $$s_{n}=\sum_{j=1}^{n} {\frac{1}{2^{j-1}}}$$ feet. 
+
+\includegraphics[scale=.5]{Pages/IS_2}
+
+\newpage
+
+and is now $${\frac{1}{2^{n-1}}}$$ feet from the wall so $${s_{n}=2-{\frac{1}{2^{n-1}}}}$$ If he keeps jumping forever, how far does he go? He moves $$\sum_{j=1}^{n} {\frac{1}{2^{j-1}}}$$ feet. This number is at most 2 and yet it exceeds $$2-{\frac{1}{2^{n}}}$$ for all $$n\geq1$$. 
+
+\includegraphics[scale=.5]{Pages/IS_3}
+
+\newpage
+
+Hence the sum of this infinites collection of numbers ${1, \frac{1}{2}, \frac{1}{4}, . . .}$ must be two. How can we generalize this? 
+\underline {Generalization 1}: Genetic Series 
+How large is $1+r+r^{2}+$ . . . If $|r|<|$? Solution: Let $S{n}= 1+r+...+r^{n}$ For $r\leq 0$, $S{1}\leq S{2}\leq ...$ and we expect him $S_{n}=\sum_{j-0}^{\infty} {r^{j}}$ 
+
+\includegraphics[scale=.5]{Pages/IS_4}
+
+\newpage
+
+$S_{n}=1+r+...+r^{n}$ is complex in that it has too many terms. how can we simplify it? We need to capitalize on the regularity of the expensive. 
+Notice: $rS_{n}=r+r^{2}+...+r^{n+1}$, subtracting equals from equal $S_{n}-rS_{n}=1-r^{n+1}$ so for $r\neq 1, S_{n}=\frac{1-r^{n+1}}{1-r}$
+
+\includegraphics[scale=.5]{Pages/IS_5}
 
 %Matthew: IS8 - IS15
 
@@ -204,6 +486,206 @@ R will represent real numbers
 
 %Rebecca: IS24 - IS32
 
+\normalsize
+
+\newpage
+
+\noindent \underline{Theorem 2} (The Integral Test)
+\vspace{5mm}
+\\ Suppose $a_1 \geq a_2 \geq \cdots \geq 0$.
+\\ Extend $a_n$ to $a(x)$ where $a(x)$ is continuous,
+$a(n) = a_n$ and $a(x)$ decreases,
+\\ Then $\sum_n a_n < \infty$ if and only if $\int_{1}^{\infty} a(x) dx < \infty$
+\vspace{5mm}
+\\ \underline{Proof}
+$$\int_{1}^{\infty} a(x) dx = \sum_{n=1}^{\infty} \int_{n}^{n+1} a(x) dx$$
+$$ \leq \sum_{n=1}^{\infty} \int_{n}^{n+1} a_n dx$$
+$$ = \sum_{n=1}^{\infty} a_n $$
+
+\includegraphics[scale=.5]{Pages/IS_24}
+
+\newpage
+
+\noindent Lower-bounding,
+
+$$ \int_{1}^{n} a(x) dx = \sum_{n=2}^{\infty} \int_{n-1}^{n} a(x) dx$$
+$$ \geq \sum_{n=2}^{\infty} \int_{n-1}^{\infty} a_n dx $$
+$$ = \sum_{n=2}^{\infty} a_n$$
+
+\noindent Hence, $\sum_{n=2}^{\infty} a_n $ and $ \int_{1}^{\infty} a(x) dx$
+\\ converge or diverge together.
+
+\includegraphics[scale=.5]{Pages/IS_25}
+
+\newpage
+
+\noindent Are $\sum_{j=1}^{\infty} a_j$ and $ \sum_{k=1}^{\infty} b_k$ equal, where 
+\\$$b_k = \sum_{n_k \leq j \leq n_{k+1}} a_j$$
+and $n_o = 0 < 1 = n_1 < n_2 < \cdots $? 
+\\ \vspace{2mm}
+
+\noindent More generally, when do all re-orderings of the terms of a series produce the same sum?
+
+\includegraphics[scale=.5]{Pages/IS_26}
+
+\newpage
+
+\noindent \underline{Theorem:} Let $a_j \geq 0$
+\\ and $F_1 \subseteq F_2 \subseteq \cdots $ with
+\\ $ \cup_{n=1}^{\infty} F_n = \mathbb{N} $ and $F_n$ is finite.
+\\ Then $$\sum_{j=1}^{\infty} a_j = \lim_{n \rightarrow \infty} \sum_{j \in F_n} a_j$$
+\vspace{5mm}
+\\ \underline{Proof:} Take away
+\\ $$ s < S_{\infty} \equiv \sum_{j=1}^{\infty} a_j$$
+\\ $ \exists N < \infty$ such that for all 
+\ $ n \geq N$, $a_1 + \cdots + a_n > s$
+
+\includegraphics[scale=.5]{Pages/IS_27}
+
+\newpage
+
+\noindent Since $ \cup_{n=1}^{\infty} F_n = \mathbb{N}$, 
+\\ $ \exists N' \geq N$ such that
+\\ $\{1,2, \cdots, N\} \subseteq F_{N'}$ 
+\\ Hence for all $ n \geq N'$
+$$ \sum_{j \in F_n} a_j \geq \sum_{j=1}^{N} a_j > s $$
+\\ \noindent Moreover, since $F_n$ is finite, 
+$$\exists n* \geq max \{ j \in F_n \}$$
+\\ Hence,$\sum_{ j \in F_n } a_j \leq \sum_{j=1}^{n} a_j \leq s_\infty $ \color{blue} TEXT CUT OFF \color{black}
+
+\includegraphics[scale=.5]{Pages/IS_28}
+
+\newpage
+
+\textbf{Summation by Parts}
+\vspace{2mm}
+\\ \noindent \underline{Theorem} Let $A_o = 0$, $A_n = a_1 + \cdots + a_n$ 
+\\ Suppose $\{ A_n: n\geq 1\}$ is bounded.
+\\ Let $b_1 \geq b_2 \geq \cdots $ with $b_n \rightarrow 0.$
+\\ \noindent Then $\sum_{j=1}^{\infty} a_j b_j$ converges.
+
+\includegraphics[scale=.5]{Pages/IS_29}
+
+\newpage
+
+\begin{center}
+(for all $n\geq 1$)
+\end{center}
+\vspace{3mm}
+\noindent \underline{Proof:} Suppose $|A_n| < A^* <\infty$.
+\\Fix any $\epsilon > 0$. Take any $\delta > 0$ to be chosen later $\exists  N$ such that for $n\geq N$ $0 \leq b_n < \delta_\epsilon$
+\\ For $n \geq N$ and $p \geq 0$,
+$$ \sum_{j=n}^{n+p} A_j b_j = \sum_{j=n-1}^{n+p} (A_j - A_{j-1}) b_j$$ 
+$$= \sum_{j=n}^{n+p} A_j b_j - \sum_{j=n-1}^{n+p-1} A_j b_{j+1}$$
+
+\includegraphics[scale=.5]{Pages/IS_30}
+
+\newpage
+
+\noindent So
+$$|\sum_{j=n}^{n+p} a_j b_j|$$
+$$ = |A_{n+p} b_{n+p} - A_{n-1} b_n + \sum_{j=n}^{n+p-1} A_j(b_j - b_{j+1})|$$
+$$ \leq |A_{n+p}| b_{n+p} + |A_{n-1}| b_n + \sum_{j=n}^{n+p-1} |A_j| |b_j - b_{j+1}|$$
+
+\includegraphics[scale=.5]{Pages/IS_31}
+
+\newpage
+
+$$\leq A^*\delta\epsilon + A^*\delta\epsilon + A^*\sum_{j=n}^{n+p-1} (b_j - b_{j+1})$$
+$$ \leq 2A^*\delta\epsilon + A^*(b_n - b_{n+p})$$
+$$ \leq 3A^*\delta\epsilon$$
+\\ \noindent So let $\delta$ be any real number such that $0 < 3A^*\delta < 1$.
+\\ \noindent Hence $\sum_{j=1}^n a_j b_j$ satisfies the Cauchy criterion. 
+\\ Therefore, it converges.
+
+\includegraphics[scale=.5]{Pages/IS_32}
+
+\newpage
+
+\noindent 3) Thinking grandly, maybe all of mathematics can be put on a set theoretic foundation.\\ \indent Let's try to do so. 
+\\ \vspace{2mm}
+\hrulefill
+
+\noindent \underline{Some Set Theory}
+\vspace{2mm}
+\\ \noindent A set can be defined by 
+\begin{enumerate} [(i)]
+\item listing its elements
+\item listing the properties that determine membership in the set.
+\end{enumerate}
+
+\includegraphics[scale=.5]{Pages/ST_9}
+
+\newpage 
+
+\noindent \underline{Examples}
+
+\vspace{2mm}
+\begin{itemize}
+\item $\{1,2,5\}$ 
+\item \{ cat, bat, dog\ \}
+\item $\{\{1,2\},5\}$
+\item \{ odd primes \}
+\item \{ positive integers having no odd divisors \}
+\end{itemize}
+
+\includegraphics[scale=.5]{Pages/ST_10}
+
+\newpage
+
+\noindent How can we construct "new" sets from "old" sets?
+
+\includegraphics[scale=.5]{Pages/ST_11_im1}
+
+\noindent Clearly, $A$ defines another set $$ A^c \equiv \{ x \in \mathbb{U}: x \notin A\} $$
+
+\includegraphics[scale=.5]{Pages/ST_11}
+
+\newpage
+
+\noindent So: What is a THEOREM?
+\vspace{2mm}
+\\ \noindent It always has the form 
+
+\begin{center}
+\fbox{If..., then...}
+\end{center}
+
+\vspace{2mm}
+\noindent Let
+\begin{itemize}
+\item $A \equiv \{ x \in \mathbb{U}: x $ satisfies the conditions in the statement of the theorem \}
+\item $B \equiv \{ x \in \mathbb{U}: x $ satisfies the conclusion of the theorem \}
+\end{itemize}
+
+\includegraphics[scale=.5]{Pages/ST_19}
+
+\newpage
+
+\noindent Hence, this theorem can be nested as nothing other than $A \subseteq B $.
+\\ \indent Hence, a proof is just a logical demonstration:
+\\ \indent For each $x \in A$, in fact $x \in B$ also.
+
+\includegraphics[scale=.5]{Pages/ST_20}
+
+\newpage
+
+\noindent It is beyond the scope of this course to formalize how the statement $A \subseteq B$ may be proved. However, to illustrate what is required, it is sufficient to show:
+\vspace{2mm}
+\\ For each $x \in A$, there exists sets 
+$$ D_{x, 1} \subseteq D_{x, 2} \subseteq D_{x, 3} \subseteq \cdots $$
+\\ such that $x \in D_{x, 1}$ \underline{and}
+$$ \bigcup_{j=1}^{\infty} D_{x, j} \subseteq B$$
+
+\includegraphics[scale=.5]{Pages/ST_21}
+
+
+
+
+
+
+
+ 
 %Maady: IS33 - IS42
 
 \section{Metric Spaces Part 1}
