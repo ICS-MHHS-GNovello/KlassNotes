@@ -241,6 +241,36 @@ Prove $\sqrt{a_{n}} \rightarrow \sqrt{a}$
 \section{Infinite Series}
 
 %Sukhreet: IS1 - IS 7
+A frog is 2 feet from a wall. He makes a succession of jumps toward it, always jumping half his remaining distance to the wall. Hence his finest jump is one foot. Now he is one foot from the wall. So
+
+\includegraphics[scale=.5]{Pages/IS_1}
+
+\newpage
+
+his second jump is ${\frac{1}{2}}$ feet. He is now ${\frac{1}{2}}$ feet from the wall so he jumps ${\frac{1}{4}}$ feet. He makes successive jumps of ${1, \frac{1}{2}, \frac{1}{4}, \frac{1}{8}, . . .}$ After n jumps he has moved $$s_{n}=\sum_{j=1}^{n} {\frac{1}{2^{j-1}}}$$ feet. 
+
+\includegraphics[scale=.5]{Pages/IS_2}
+
+\newpage
+
+and is now $${\frac{1}{2^{n-1}}}$$ feet from the wall so $${s_{n}=2-{\frac{1}{2^{n-1}}}}$$ If he keeps jumping forever, how far does he go? He moves $$\sum_{j=1}^{n} {\frac{1}{2^{j-1}}}$$ feet. This number is at most 2 and yet it exceeds $$2-{\frac{1}{2^{n}}}$$ for all $$n\geq1$$. 
+
+\includegraphics[scale=.5]{Pages/IS_3}
+
+\newpage
+
+Hence the sum of this infinites collection of numbers ${1, \frac{1}{2}, \frac{1}{4}, . . .}$ must be two. How can we generalize this? 
+\underline {Generalization 1}: Genetic Series 
+How large is $1+r+r^{2}+$ . . . If $|r|<|$? Solution: Let $S{n}= 1+r+...+r^{n}$ For $r\leq 0$, $S{1}\leq S{2}\leq ...$ and we expect him $S_{n}=\sum_{j-0}^{\infty} {r^{j}}$ 
+
+\includegraphics[scale=.5]{Pages/IS_4}
+
+\newpage
+
+$S_{n}=1+r+...+r^{n}$ is complex in that it has too many terms. how can we simplify it? We need to capitalize on the regularity of the expensive. 
+Notice: $rS_{n}=r+r^{2}+...+r^{n+1}$, subtracting equals from equal $S_{n}-rS_{n}=1-r^{n+1}$ so for $r\neq 1, S_{n}=\frac{1-r^{n+1}}{1-r}$
+
+\includegraphics[scale=.5]{Pages/IS_5}
 
 %Matthew: IS8 - IS15
 
