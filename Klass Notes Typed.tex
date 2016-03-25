@@ -1273,10 +1273,48 @@ Proof $$|x|>R, \bar{\lim}_{J\rightarrow\infty}|x^ja_j|=\infty$$
 
 \includegraphics[scale=.42]{Pages/IS_36}
  
-
+\newpage
 \section{Metric Spaces Part 1}
 
 %Travis: M1 - M5
+How might we extend our mathematical investigations beyond the real numbers?
+\\Reexamining what has already been useful, suppose we consider ordered pairs of reals $\mathbb{R}^{2}\equiv \lbrace (x,y):x,y\epsilon \mathbb{R}\rbrace$ since sequences
+\\\includegraphics[scale=0.5]{Pages/MetricSpace1_1.pdf}
+\pagebreak
+\\of reals were of vital significance, consider $\lbrace (x_{n} ,y_{n} ):n\geq 1\rbrace mx_{n} ,y_{n} \epsilon \mathbb{R}$. What would it mean to say that such a sequence converged in $\mathbb{R} ^{2}$? Clearly, $(x_{n} ,y_{n} )\rightarrow (x_{\infty} ,y_{\infty})$ iff $x_{n} \rightarrow x_{\infty}$ and $y_{n} \rightarrow y_{\infty}$
+\\\includegraphics[scale=0.5]{Pages/MetricSpace1_2.pdf}
+\pagebreak
+\\So the notion of convergence in $\mathbb{R} ^{2}$ seems clear, and it extends naturally to $\mathbb{R} ^{k}$
+\\But how far is a particular term in the sequence from its limit? In order to be able to answer such a question, we require a notion of distance between pairs
+\\\includegraphics[scale=0.5]{Pages/MetricSpace1_3.pdf}
+\pagebreak
+\\of points in the underlying set, be it $\mathbb{R}$, $\mathbb{R} ^{2}$ ,$\mathbb{R} ^{k}$, or just some abstract sets. 
+\\To achieve broadest applicability we seek the most general possible notion of a distance function. What properties must a distance function have?
+\\\includegraphics[scale=0.5]{Pages/MetricSpace1_4.pdf}
+\pagebreak
+\\Given a non-empty set $M$, if $d(\cdot, \cdot)$ is a distance function on $M$ then 
+\\(i) $d : M \times M\rightarrow (0, \infty)$
+\\(ii) $d(x,y)=0$ if $x=y$
+\\(iii) $d(x,y)=d(y,x)$
+\\Is this sufficient?
+\\Suppose $d(x,y)$ denotes the distance along the shortest path from $x$ to $y$. Then
+\\\includegraphics[scale=0.5]{Pages/MetricSpace1_5.pdf}
+\pagebreak
+%Infinite Series P. 37-39%
+\begin{large}Multiplication of Power Series
+\end{large}
+\\Let $$f(x)=\sum_{j=0}^{\infty} a_{j} x^{j}$$ and $$g(x)=\sum_{k=0}^{\infty} b_{k} x^{k}$$ Suppose $f$ has radius of convergence $R$ and $g$ has radius of convergence $R^{1} \geq R$ Let $h(x)=f(x)$ $g(x)$ for $|x|\leq R$ with $|x|<R^{1}$
+\\\includegraphics[scale=0.5]{Pages/InfiniteSeries_37.pdf}
+\pagebreak
+\\Then $\exists$ $C_{n}$ such that $$h(x)= \sum_{n=0}^{\infty}c_{n}x^{n}$$ has radius of convergence at least R, where $$C_{n}=\sum_{k=0}^{n} a_{k} b_{n-k}$$
+\\\includegraphics[scale=0.5]{Pages/InfiniteSeries_38.pdf}
+\pagebreak
+\\Pf: Let $$F(x)=\sum_{j=0}^{\infty} |a_{j} x^{j}|$$
+$$G(x)=\sum_{k=0}^{\infty} |b_{k} x^{k}|$$
+Fix any $|x|<R$. 
+\\There exists $j_{x}<\infty$ and $0<\lambda <1$ such that $|a_{j} x^{j}|<\lambda^{j}$ and $|b_{j} x^{j}|<\lambda^{j}$ for all $j\geq j$ 
+\\Let $$f_{n}(x)=\sum_{j=0}^{2n} a{j}x^{j}$$ $$g_{n}(x)=\sum_{k=0}^{2n} b_{k} x^{k}$$
+\\\includegraphics[scale=0.5]{Pages/InfiniteSeries_39.pdf}
 
 %Jerome: M6- M10
 
