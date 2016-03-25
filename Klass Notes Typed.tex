@@ -67,6 +67,7 @@ $\mathcal{U}$: Things on Earth
 
 
 
+\newpage
 
 \section{From $\mathbb{Z}$ to $\mathbb{R}$ via ordering}
 %Jazz: ZR1-ZR5
@@ -74,7 +75,60 @@ $\mathcal{U}$: Things on Earth
 %Kyler: ZR6 - ZR10
 
 %Preethika: ZR11-ZR14
+What do the elements of $\mathbb{R}$ look like? 
+\\On the number line they look like
 
+\includegraphics[scale=.5]{Pages/ZR_11_im1}
+\\This set of dynamic rationals
+\\How can we characterize them?
+
+\includegraphics[scale=.5]{Pages/ZR_11}
+
+\newpage
+
+\underline{Therom} $B \in \mathbb{R}$ iff
+\begin{enumerate}[(i)] 
+\item $\phi \subsetneq B \subsetneq \mathbb{Z}_{(\infty)}$ 
+\item If $b \in B$ and $a \in \mathbb{Z}_{(\infty)}$ with $a <_\infty b$ then $a \in B$
+\item If $b \in B$ 
+\\ $\exists b' \in B$ s.t
+\\ $b <_\infty b'$
+
+\includegraphics[scale=.5]{Pages/ZR_12}
+\end{enumerate}
+
+\newpage
+
+$\underline{Pf:}^{(\Rightarrow)}$ Spse $B \in \mathbb{R}$
+\\ $\exists$ non-entry $A \underline{\subset} \mathbb{Z}_{(\infty)}$
+\\ s.t $$B=\bigcup_{a \in A} \mathcal{L}_a$$
+\\ We are given that
+\\ $B \neq \emptyset$ and $B \neq \mathbb{Z}_{(\infty)}$ 
+\begin{enumerate}[(ii)] 
+\item Spse $b \in B$
+\\ and $b_o <_\infty b$ with $b_o \in \mathbb{Z}_{(\infty)}$
+\\ $\exists a \in A: b \in \mathcal{L}_a$
+\\hence $b_o \in \mathcal{L}_a$
+\\ so $b_o \in B$
+\item holds for -------$>$ $\mathcal{L}_a$ so (iii) holds. 
+
+\includegraphics[scale=.5]{Pages/ZR_13}
+
+\newpage
+($\Leftarrow$)Conversely,
+\\Spse B satisfies (i),(ii),(iii)
+\\Let $A=B$
+\\$\emptyset \subsetneq A \subsetneq \mathbb{Z}_{(\infty)}$
+\\Claim $$B=\bigcup_{a \in A} \mathcal{L}_a $$ 
+\\Clearly $ \bigcup \mathcal{L}_a \underline{\subset} B$ (Why?)
+\\Take away $b \in B$. 
+\\ $\exists b' >_\infty b$ s.t $b' \in B$
+\\ $b \in \mathcal{L}_b{'}$ so
+\\ $$B \underline{\subset} \bigcup_{a \in A} \mathcal{L}_a$$ qed
+
+\includegraphics[scale=.5]{Pages/ZR_14}
+
+\end{enumerate}
 
 \section{Sequence and Limits}
 
@@ -118,7 +172,6 @@ $\mathcal{U}$: Things on Earth
 %Reshma: M8-M14
 
 %Ethan: M15-M21
-
 
 
 
