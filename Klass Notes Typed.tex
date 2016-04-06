@@ -107,7 +107,70 @@ $\mathcal{U}$: Things on Earth
 %Travis: M1 - M5
 
 %Jerome: M6- M10
+\newpage
+for any z $\epsilon$ m the path $x \rightarrow z$ followed by $z \rightarrow y$ can be no shorter than the shortest path from $x$ to $y$ hence we require $$(iv)d (\frac{x}{y}) \leq d(x,z) + d(z,y)$$ This is called the triangle inequality.
+ 
+\includegraphics[scale=.5]{Pages/MS_6}
 
+\newpage
+
+\underline{Def}: Any d: $m \times m \rightarrow [0,\infty)$ satisfying conditions $(i) - (iv)$ will be called a \underline{metric} on $m$. How could we construct a metric? Suppose $m$ is a finite set of points. Thinking of these as cities in a given state / region. 
+
+\includegraphics[scale=.5]{Pages/MS_7}
+
+\newpage
+
+Call them $ C_1 , C_2 , \ldots , C_L $ Suppose some pairs $(i,j)$ of cities $C_i$ and $C_j$ are adjacent in that they are linked by a non-stop road of some positive, finite, known distance. $g_{ij}$. When is there a path by car between every two cities? 
+ 
+\includegraphics[scale=.5]{Pages/MS_8}
+
+\newpage
+
+\underline{Ans.} \newline
+Let $A = (a_{ij} )$ be an $L x L$ incidence matrix where $$ a_{ii} \equiv 1  \mbox{ and for } i \neq j$$ 
+$$a_{ij} = 
+\begin{cases} 
+1 & \mbox{ if } C_i \mbox{ and } C_j \mbox{ are adjacent } \\ 
+0 & \mbox{ otherwise }
+\end{cases}$$ \newline
+Let $A^k \equiv (a_{ij_{j^k}})$ $$a_{ij_{j^k}} > 0$$ iff there is a path along adjacent cities between $C_i$ and $C_j$ taking at most $k$ steps. 
+
+\includegraphics[scale=.5]{Pages/MS_9}
+
+
+\newpage
+
+Hence transportation by car is feasible between any two cities iff $a_{ij_{j^{l-1}}} > 0$ for all $1 \leq i,j \leq L-1$ The distance $d(C_i, C_j)$ would then be define as the sum of the length producing the shortest path. 
+
+\includegraphics[scale=.5]{Pages/MS_10}
+
+%Jerome: IS40-IS42
+
+\newpage
+
+Then 
+$$h_n (x) \equiv f_n (x) g_n (x) \rightarrow h(x)$$ Notice that
+$$h_n (x) = \sum_{j=0}^{2n} a_nx^j \sum_{k=0}^n b_kx^k$$ $$= \sum_{r=0}^{2n} (\sum_{j=0}^r a_jb_{r-j})x^r$$ $$+ \sum_{ \{ 0 \leq j, k \leq 2n : j+k > 2n\}} a_jb_kx^{j+k}$$ $$\equiv \tilde{h}_n(x) + \gamma_n(x)$$
+
+\includegraphics[scale=.5]{Pages/IS_40}
+
+\newpage 
+
+For $n \geq j_*$,
+$$|\gamma_n (x)| \leq \sum_{j=0}^n |a_jx^j| \sum_{k=n+1}^\infty |b_kx^k|$$ 
+$$+  \sum_{j=n+1}^\infty |a_jx^j| \sum_{k=0}^n |b_kx^k|$$ $$\leq F(x) \sum_{k=n+1}^\infty \lambda^k$$ $$+ G(x)
+\sum_{j=n+1}^\infty \lambda^j$$ $$= \frac{(F(x)+G(x)\lambda^{n+1}}{1-\lambda} \rightarrow 0 $$ as $n \rightarrow \infty$
+
+\includegraphics[scale=.5]{Pages/IS_41}
+
+\newpage
+
+Therefore $$ h_n (x) - \tilde{h}_n (x) \rightarrow 0$$
+so 
+$$h (x) = \lim_{n \rightarrow \infty} \tilde{h}_n (k)$$
+$$= \sum_{n=0}^\infty (\sum_{j=0}^n a_jb_{n-j})x^n$$
+
+\includegraphics[scale=.5]{Pages/IS_42}
 
 
 \section{Metric Spaces Part 2}
